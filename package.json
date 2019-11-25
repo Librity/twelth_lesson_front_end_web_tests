@@ -18,7 +18,8 @@
       "**/__tests__/**/*.test.js"
     ],
     "setupFilesAfterEnv": [
-      "@testing-library/jest-dom/extend-expect"
+      "@testing-library/jest-dom/extend-expect",
+      "jest-localstorage-mock"
     ],
     "moduleNameMapper": {
       "^~/(.*)": "<rootDir>/src/$1"
@@ -37,10 +38,9 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.1.5",
-    "@types/jest": "^24.0.23",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.23",
     "babel-eslint": "^10.0.3",
     "babel-plugin-root-import": "^6.4.1",
     "customize-cra": "^0.8.0",
@@ -54,6 +54,8 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "prettier": "^1.18.2"
+    "jest-localstorage-mock": "^2.4.0",
+    "prettier": "^1.18.2",
+    "react-app-rewired": "^2.1.5"
   }
 }
